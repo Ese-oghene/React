@@ -11,7 +11,9 @@ import EditJobPage from './Pages/EditJobPage';
 
 // const API_BASE = import.meta.env.VITE_API_BASE;
 
-const API_BASE = import.meta.env.VITE_API_BASE; // or hardcode
+//const API_BASE = import.meta.env.VITE_API_BASE; // or hardcode
+
+const API_BASE = 'https://json-api-dmw4.onrender.com';
 
 const App = () => {
   // Add new Job
