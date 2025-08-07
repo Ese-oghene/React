@@ -18,7 +18,7 @@ const API_BASE = 'https://json-api-dmw4.onrender.com';
 const App = () => {
   // Add new Job
   const addJob = async (newJob) => {
-    const res = await fetch(`${API_BASE}/api/jobs`, {
+    const res = await fetch(`${API_BASE}/jobs`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -30,7 +30,7 @@ const App = () => {
 
   // Delete Job
   const deleteJob = async (id) => {
-    const res = await fetch(`${API_BASE}/api/jobs/${id}`, {
+    const res = await fetch(`${API_BASE}/jobs/${id}`, {
       method: 'DELETE'
     });
     return;
@@ -38,7 +38,7 @@ const App = () => {
 
   // Update job
   const updateJob = async (job) => {
-    const res = await fetch(`${API_BASE}/api/jobs/${job.id}`, {
+    const res = await fetch(`${API_BASE}/jobs/${job.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
